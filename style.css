@@ -1,0 +1,74 @@
+* {
+  margin: 0%;
+}
+html,
+body {
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 0.7fr 1fr 1fr 0.7fr;
+  grid-template-rows: 0.5fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "nav header header header"
+    "nav content content content"
+    "nav content content content"
+    "nav content content content";
+}
+.content {
+  grid-area: content;
+  background-color: rgb(219, 211, 202);
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.7fr;
+  grid-template-rows: 0.3fr 1fr 1fr 1fr;
+}
+
+.nav {
+  grid-area: nav;
+  background-color: aquamarine;
+}
+.header {
+  grid-area: header;
+  background-color: rgb(211, 34, 34);
+}
+.bar {
+  grid-area: bar;
+  background-color: rgb(30, 61, 199);
+}
+.one {
+  background-color: aqua;
+  grid-area: 2;
+}
+.two {
+  background-color: rgb(76, 107, 107);
+  grid-area: 2/2;
+}
+.three {
+  background-color: rgb(187, 226, 226);
+  grid-area: 3;
+}
+.four {
+  background-color: rgb(23, 65, 65);
+  grid-area: 3/2;
+}
+.five {
+  background-color: rgb(76, 107, 107);
+  grid-area: 4;
+}
+.six {
+  background-color: rgb(78, 158, 158);
+  grid-area: 4/2;
+}
+.space {
+  background-color: rgba(41, 62, 133, 0.993);
+  grid-area: 1 / span 3;
+}
+.trend {
+  background-color: rgb(167, 167, 30);
+  grid-area: span 3;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
