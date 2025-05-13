@@ -34,8 +34,24 @@ body {
 
 .nav {
   grid-area: nav;
-  background-color: aquamarine;
+  background-color: rgb(23, 155, 216);
+  display: grid;
+  grid-template-rows: 0.7fr 1fr;
 }
+.nav1 {
+  padding: 20px;
+}
+.nav2 {
+  padding: 20px;
+}
+img {
+  float: left;
+}
+.white {
+  margin-left: 40px;
+  color: white;
+}
+
 .header {
   grid-area: header;
   background-color: rgb(211, 34, 34);
@@ -66,10 +82,10 @@ body {
   grid-area: 1;
   display: flex;
   justify-content: center;
-  align-items: ce;
+  margin-bottom: 20px;
 }
 .eight {
-  grid-area: 2;
+  grid-area: 3;
 }
 .space {
   grid-area: 1 / span 3;
@@ -82,8 +98,8 @@ body {
   grid-area: span 3;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 30px;
+  grid-template-rows: 1fr 0.1fr 1fr;
+
   padding: 20px;
 }
 
@@ -94,4 +110,9 @@ body {
   flex-direction: column;
   padding: 20px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.cardHeading {
+  grid-area: 2;
+  font-size: 1.5rem;
+  align-content: flex-end;
 }
