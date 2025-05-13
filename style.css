@@ -54,12 +54,18 @@ img {
 
 .header {
   grid-area: header;
-  background-color: rgb(211, 34, 34);
+  background-color: white;
+  padding: 20px;
 }
-.bar {
-  grid-area: bar;
-  background-color: rgb(30, 61, 199);
+.searchbar {
+  width: 500px;
+  height: 30px;
+  background-color: rgba(219, 207, 207, 0.459);
+  border-radius: 20px;
+  margin-left: 50px;
+  margin-top: 10px;
 }
+
 .one {
   grid-area: 2;
 }
@@ -99,7 +105,6 @@ img {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 0.1fr 1fr;
-
   padding: 20px;
 }
 
