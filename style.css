@@ -1,5 +1,6 @@
 * {
   margin: 0%;
+  box-sizing: border-box;
 }
 html,
 body {
@@ -19,10 +20,16 @@ body {
 }
 .content {
   grid-area: content;
-  background-color: rgb(219, 211, 202);
+  background-color: rgba(219, 207, 207, 0.459);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
   display: grid;
   grid-template-columns: 1fr 1fr 0.7fr;
   grid-template-rows: 0.3fr 1fr 1fr 1fr;
+  gap: 20px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .nav {
@@ -38,37 +45,53 @@ body {
   background-color: rgb(30, 61, 199);
 }
 .one {
-  background-color: aqua;
   grid-area: 2;
 }
 .two {
-  background-color: rgb(76, 107, 107);
   grid-area: 2/2;
 }
 .three {
-  background-color: rgb(187, 226, 226);
   grid-area: 3;
 }
 .four {
-  background-color: rgb(23, 65, 65);
   grid-area: 3/2;
 }
 .five {
-  background-color: rgb(76, 107, 107);
   grid-area: 4;
 }
 .six {
-  background-color: rgb(78, 158, 158);
   grid-area: 4/2;
 }
+.seven {
+  grid-area: 1;
+  display: flex;
+  justify-content: center;
+  align-items: ce;
+}
+.eight {
+  grid-area: 2;
+}
 .space {
-  background-color: rgba(41, 62, 133, 0.993);
   grid-area: 1 / span 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-size: 1.5rem;
 }
 .trend {
-  background-color: rgb(167, 167, 30);
   grid-area: span 3;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
+  gap: 30px;
+  padding: 20px;
+}
+
+.cards {
+  border-radius: 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
